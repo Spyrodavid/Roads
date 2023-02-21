@@ -1,0 +1,5 @@
+﻿  Main.cpp
+C:\Users\spyro\source\repos\sfml-test\sfml-test\Solver.hpp(39,12): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\spyro\source\repos\sfml-test\sfml-test\Main.cpp(23,34): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\spyro\source\repos\sfml-test\sfml-test\Main.cpp(63,96): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  sfml-test.vcxproj -> C:\Users\spyro\source\repos\sfml-test\Debug\sfml-test.exe
