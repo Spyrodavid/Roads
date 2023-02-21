@@ -41,8 +41,9 @@ class Solver {
 		void update() {
 			applyGravity();
 			updateObjects(dt);
-			applyConstraint();
 			checkCollisions();
+			applyConstraint();
+			
 		}
 
 		void applyGravity() {
@@ -82,7 +83,7 @@ class Solver {
 		std::vector<VerletObject> object_vector;
 		sf::Vector2f constraint_position;
 		float constraint_radius;
-		sf::Vector2f gravity_acceleration { 0.f, 100.f };
+		sf::Vector2f gravity_acceleration { 0.f, 200.f };
 
 		void updateObjects(float dt) {
 			for (auto& object : object_vector) {

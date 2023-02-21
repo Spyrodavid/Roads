@@ -21,7 +21,7 @@ int main()
     Renderer renderer{ window };
     sf::Vector2f middle_constraint = { static_cast<float> (window_width / 2), static_cast<float> (window_height / 2) };
     float object_spawn_rate = .01;
-    int object_max = 300;
+    int object_max = 2;
 
     // add constraint to solver
     solver.setConstraint(middle_constraint, static_cast<float> (window_height / 2));
@@ -32,9 +32,15 @@ int main()
 
     sf::Clock clock;
 
+    sf::Time prevtime = clock.getElapsedTime();
 
     while (window.isOpen())
     {
+        while (clock.getElapsedTime().asMilliseconds() - 00 < prevtime.asMilliseconds())
+        {
+
+        }
+        prevtime = clock.getElapsedTime();
         sf::Event event;
         while (window.pollEvent(event))
         {
@@ -45,11 +51,11 @@ int main()
                 case sf::Event::KeyPressed:
                     if (event.key.code == sf::Keyboard::Equal) {
                         auto constraint = solver.getConstraint();
-                        solver.setConstraint({ constraint.x, constraint.y }, constraint.z - 1);
+                        solver.setConstraint({ constraint.x, constraint.y }, constraint.z - 3);
                     }
                     if (event.key.code == sf::Keyboard::Hyphen) {
                         auto constraint = solver.getConstraint();
-                        solver.setConstraint({ constraint.x, constraint.y }, constraint.z + 1);
+                        solver.setConstraint({ constraint.x, constraint.y }, constraint.z + 3);
                     }
 
                     break;
@@ -60,8 +66,8 @@ int main()
         }
 
         while (clock.getElapsedTime().asSeconds() > solver.getObjectCount() * object_spawn_rate && solver.getObjectCount() < object_max) {
-            auto& object = solver.makeObject(middle_constraint - sf::Vector2f(200.f, 100.f), 2 + rand() % 18);
-            object.color = {static_cast<sf::Uint8> ( rand() % 255),static_cast<sf::Uint8> ( rand() % 255), static_cast<sf::Uint8> ( rand() % 255)};
+            auto& object = solver.makeObject(middle_constraint - sf::Vector2f(200.f + (rand() % 10), 100.f), 20);
+            object.color = {static_cast<sf::Uint8> ( 100),static_cast<sf::Uint8> ( 100), static_cast<sf::Uint8> (( rand() % 2) * 255) };
             
         }
 
