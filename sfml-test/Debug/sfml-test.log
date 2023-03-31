@@ -1,0 +1,15 @@
+﻿  Main.cpp
+C:\Users\spyro\source\repos\Roads\sfml-test\Main.cpp(17,40): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\spyro\source\repos\Roads\sfml-test\Main.cpp(19,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\spyro\source\repos\Roads\sfml-test\Main.cpp(72,22): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\spyro\source\repos\Roads\sfml-test\Main.cpp(73,27): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\spyro\source\repos\Roads\sfml-test\Main.cpp(85,53): warning C4244: '+=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+  sfml-test.vcxproj -> C:\Users\spyro\Source\Repos\Roads\Debug\sfml-test.exe

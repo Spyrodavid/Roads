@@ -1,0 +1,21 @@
+﻿  Main.cpp
+C:\Users\spyro\source\repos\Roads\sfml-test\Main.cpp(26,59): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\spyro\source\repos\Roads\sfml-test\Main.cpp(26,40): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\spyro\source\repos\Roads\sfml-test\Main.cpp(28,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\spyro\source\repos\Roads\sfml-test\Main.cpp(40,27): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\spyro\source\repos\Roads\sfml-test\Main.cpp(41,27): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\spyro\source\repos\Roads\sfml-test\Main.cpp(60,21): warning C4244: 'initializing': conversion from 'long double' to 'float', possible loss of data
+  Generating code
+  1 of 116 functions ( 0.9%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  sfml-test.vcxproj -> C:\Users\spyro\Source\Repos\Roads\Release\sfml-test.exe

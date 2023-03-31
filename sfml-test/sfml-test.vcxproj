@@ -148,10 +148,6 @@
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Rand_Generator.hpp" />
   </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Renderer.hpp" />
-    <ClInclude Include="Solver.hpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
